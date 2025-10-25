@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" bgcolor="#bbf2faff" padding="2rem">
+    <section id="contact">
       <h2><center>Contact</center></h2>
       <center>Get in touch with me via the following contact details:
       <ul>
