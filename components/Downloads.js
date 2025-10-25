@@ -32,6 +32,16 @@ export default function Downloads() {
       <div style={{ marginTop: '2rem' }}>
         <h2>IGCSE Computer Science - PowerPoint Presentations</h2>
 
+        {/* Past paper Question 1.1 */}
+        <div style={containerStyle}>
+          <span style={titleStyle}>1.1 – Number systems</span>
+          <a href="/pastpapersquestions/1.1.pdf" download style={buttonStyle}>
+            Download
+          </a>
+        </div>
+
+
+
         {/* Presentation 4.1 */}
         <div style={containerStyle}>
           <span style={titleStyle}>4.1 – Types of software and interrupts</span>
