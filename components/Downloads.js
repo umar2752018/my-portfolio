@@ -56,7 +56,7 @@ export default function Downloads() {
 
         <div style={containerStyle}>
           <span style={titleStyle}>1.1 – Number Systems</span>
-          <a href="/pastpapersquestions/1.1.pdf" download style={buttonStyle}>
+          <a href="/pastpaperquestions/1.1.pdf" download style={buttonStyle}>
             Download
           </a>
         </div>
