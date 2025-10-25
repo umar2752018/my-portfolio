@@ -10,12 +10,12 @@ export default function Education() {
       <div>
         <h3>Bachelor of Computer Science</h3>
         <p>University of Calicut (Graduated: April 2011)</p>
-        <p>Specialized in Computer Science with Mathematics and Statistics as subsidiary subjects. Score: 82.72%</p>
+        <p>Specialized in Computer Science with Mathematics and Statistics as subsidiary subjects</p>
       </div>
       <div>
         <h3>Educational Professional Development Program for Private School Teachers</h3>
         <p>University of Bahrain (November 2024)</p>
-        <p>Completed training in Educational Psychology, Classroom Management, Teaching Strategies, Lesson Planning, and Assessment & Evaluation. Score: 88%</p>
+        <p>Completed training in Educational Psychology, Classroom Management, Teaching Strategies, Lesson Planning, and Assessment & Evaluation</p>
       </div>
     </section>
   );
