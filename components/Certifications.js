@@ -13,7 +13,7 @@ export default function Certifications() {
         </thead>
         <tbody>
           <tr>
-            <td>Google Certified Educator Level 1 & 2</td>
+            <td>Google Certified Educator Level 1, 2 and trainer assessment</td>
             <td>Google</td>
             <td>2023</td>
           </tr>
