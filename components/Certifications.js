@@ -1,5 +1,7 @@
 "use client";
 
+import { clear } from "console";
+
 export default function Certifications() {
   const certifications = [
     {
@@ -16,46 +18,39 @@ export default function Certifications() {
 
   return (
     <section id="certifications">
-      <div className="container">
-        <h2>Certifications</h2>
+      <h2>Certifications</h2>
 
-        <div className="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Certification / Course</th>
-                <th>Issuer / Organization</th>
-                <th>Year Completed</th>
+      <div className="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Certification / Course</th>
+              <th>Issuer / Organization</th>
+              <th>Year Completed</th>
+            </tr>
+          </thead>
+          <tbody>
+            {certifications.map((cert, index) => (
+              <tr key={index}>
+                <td>{cert.name}</td>
+                <td>{cert.issuer}</td>
+                <td>{cert.year}</td>
               </tr>
-            </thead>
-            <tbody>
-              {certifications.map((cert, index) => (
-                <tr key={index}>
-                  <td>{cert.name}</td>
-                  <td>{cert.issuer}</td>
-                  <td>{cert.year}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <style jsx>{`
         section {
-          padding: 3rem 0;
-        }
-
-        .container {
-          max-width: 960px; /* Adjust to match your About.js or global container */
-          margin: 0 auto;
-          padding: 0 1rem;
-          width: 100%;
+          padding: 2rem 1rem; /* match About padding */
+          max-width: 720px; /* a common width for text content */
+          margin: 0 auto; /* center align the section */
         }
 
         h2 {
           font-size: 1.8rem;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1rem;
         }
 
         .table-container {
