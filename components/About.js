@@ -7,7 +7,9 @@ export default function About() {
       <Image
         src="/images/profile.jpg"
         alt="Umar Muqthar Profile"
-        objectFit='cover'
+        width={190}
+        height={230}
+      
       
       />
       <p>
