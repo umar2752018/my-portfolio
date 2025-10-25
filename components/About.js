@@ -1,27 +1,88 @@
-import Image from 'next/image';
+"use client";
 
-export default function About() {
+export default function Certifications() {
+  const certifications = [
+    {
+      name: "Google Certified Educator Level 1, 2 and Trainer Assessment",
+      issuer: "Google",
+      year: "2023",
+    },
+    {
+      name: "Social Emotional Learning (SEL) Course",
+      issuer: "Canada Global Consulting & Training Centre",
+      year: "2024",
+    },
+  ];
+
   return (
-    <section id="about">
-      <h1>About Me</h1>
-      <Image
-        src="/images/profile.jpg"
-        alt="Umar Muqthar Profile"
-        width="205"
-        height="230"
-      />
-      <p>
-        Hello! I'm <strong>Umar Muqthar</strong>, an experienced <strong>IGCSE Computer Science teacher</strong> with over <strong>8 years</strong> of international teaching experience in the Maldives, Bahrain, and India.
-      </p>
-      <p>
-        I specialize in delivering engaging, curriculum-aligned lessons and developing students' computational thinking, problem-solving abilities, and programming skills. My teaching approach emphasizes creativity, collaboration, and real-world applications.
-      </p>
-      <p>
-        Qualified with a <strong>Master of Computer Application</strong> and a <strong>Bachelor of Computer Science</strong>, I am passionate about making computer science accessible and inspiring the next generation of tech leaders.
-      </p>
-      <p>
-        <em>Let's build the future together—one line of code at a time!</em>
-      </p>
+    <section id="certifications">
+      <h2>Certifications</h2>
+
+      <div className="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Certification / Course</th>
+              <th>Issuer / Organization</th>
+              <th>Year Completed</th>
+            </tr>
+          </thead>
+          <tbody>
+            {certifications.map((cert, index) => (
+              <tr key={index}>
+                <td>{cert.name}</td>
+                <td>{cert.issuer}</td>
+                <td>{cert.year}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <style jsx>{`
+        section {
+          padding: 2rem 1rem; /* match About padding */
+          max-width: 720px; /* a common width for text content */
+          margin: 0 auto; /* center align the section */
+        }
+
+        h2 {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        .table-container {
+          overflow-x: auto;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          font-size: 0.95rem;
+        }
+
+        th,
+        td {
+          border: 1px solid #ddd;
+          padding: 10px 12px;
+          text-align: left;
+        }
+
+        th {
+          background-color: #f2f2f2;
+          font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+          background-color: #fafafa;
+        }
+
+        tr:hover {
+          background-color: #f1f1f1;
+          transition: background-color 0.2s ease;
+        }
+      `}</style>
     </section>
   );
 }
