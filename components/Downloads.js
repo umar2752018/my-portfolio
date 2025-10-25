@@ -27,7 +27,6 @@ export default function Downloads() {
   return (
     <section id="downloads" style={{ padding: '2rem' }}>
       <h1>Download Page</h1>
-      <p>Hello! I am [Your Name], an enthusiastic teacher...</p>
 
       {/* PowerPoints Section */}
       <div style={{ marginTop: '2rem' }}>
