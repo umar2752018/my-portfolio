@@ -43,7 +43,7 @@ export default function Downloads() {
         {/* Presentation 4.2 */}
         <div style={containerStyle}>
           <span style={titleStyle}>
-            4.2 – Types of Programming Languages, Translators, IDE
+            4.2 – Types of Programming Languages, Translators, IDEs
           </span>
           <a href="/powerpoints/4.2.pptx" download style={buttonStyle}>
             Download
