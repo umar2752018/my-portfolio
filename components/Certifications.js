@@ -5,7 +5,7 @@ export default function Certifications() {
     {
       name: "Google Certified Educator Level 1, 2 and Trainer Assessment",
       issuer: "Google",
-      year: "2023",
+      year: "2020",
     },
     {
       name: "Social Emotional Learning (SEL) Course",
