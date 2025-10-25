@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" bgcolor="#f9f9f9" padding="2rem">
+      <h2><center>Contact</center></h2>
       <center>Get in touch with me via the following contact details:
       <ul>
         
