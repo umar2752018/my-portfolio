@@ -16,33 +16,41 @@ export default function Certifications() {
 
   return (
     <section id="certifications">
-      <h2>Certifications</h2>
+      <div className="container">
+        <h2>Certifications</h2>
 
-      <div className="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Certification / Course</th>
-              <th>Issuer / Organization</th>
-              <th>Year Completed</th>
-            </tr>
-          </thead>
-          <tbody>
-            {certifications.map((cert, index) => (
-              <tr key={index}>
-                <td>{cert.name}</td>
-                <td>{cert.issuer}</td>
-                <td>{cert.year}</td>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Certification / Course</th>
+                <th>Issuer / Organization</th>
+                <th>Year Completed</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {certifications.map((cert, index) => (
+                <tr key={index}>
+                  <td>{cert.name}</td>
+                  <td>{cert.issuer}</td>
+                  <td>{cert.year}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <style jsx>{`
         section {
           padding: 3rem 0;
-          min-height: 300px;
+        }
+
+        .container {
+          max-width: 960px; /* Adjust to match your About.js or global container */
+          margin: 0 auto;
+          padding: 0 1rem;
+          width: 100%;
         }
 
         h2 {
