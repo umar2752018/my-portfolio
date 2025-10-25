@@ -5,7 +5,7 @@ export default function Education() {
       <div>
         <h3>Master of Computer Application</h3>
         <p>University of Calicut (Graduated: December 2024)</p>
-        <p>Specialized in Computer Science with core papers in Programming, Computer Architecture, Accounting, and Mathematics. Score: 69.9%</p>
+        <p>Specialized in Computer Science with core papers in Programming, Computer Architecture, Accounting, and Mathematics.</p>
       </div>
       <div>
         <h3>Bachelor of Computer Science</h3>
