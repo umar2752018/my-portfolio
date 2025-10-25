@@ -60,6 +60,14 @@ export default function Downloads() {
             Download
           </a>
         </div>
+
+         <div style={containerStyle}>
+          <span style={titleStyle}>1.2 – Text, Sound and Images</span>
+          <a href="/pastpaperquestions/1.2.pdf" download style={buttonStyle}>
+            Download
+          </a>
+        </div>
+
       </div>
     </section>
   );
