@@ -1,7 +1,5 @@
 "use client";
 
-import { clear } from "console";
-
 export default function Certifications() {
   const certifications = [
     {
