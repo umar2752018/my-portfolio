@@ -41,12 +41,13 @@ export default function Certifications() {
 
       <style jsx>{`
         section {
-          padding: 2rem 0;
+          padding: 3rem 0;
+          min-height: 300px;
         }
 
         h2 {
           font-size: 1.8rem;
-          margin-bottom: 1rem;
+          margin-bottom: 1.5rem;
         }
 
         .table-container {
