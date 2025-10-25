@@ -6,12 +6,25 @@ export const metadata: Metadata = {
   description: "Professional portfolio for Muqthar, teacher and educator.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
+      <head>
+        {/* Mobile viewport for responsiveness */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body>
+        {/* Navigation Bar */}
         <nav className="navbar">
           <div className="nav-logo">Umar Muqthar Portfolio</div>
+          <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+          <label htmlFor="menu-toggle" className="menu-icon">
+            ☰
+          </label>
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#philosophy">Philosophy</a></li>
@@ -25,6 +38,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+        {/* Main Content */}
         <main>
           <section className="hero">
             <h1>Welcome to My Portfolio</h1>
