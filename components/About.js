@@ -7,8 +7,10 @@ export default function About() {
       <Image
         src="/images/profile.jpg"
         alt="Umar Muqthar Profile"
-        width={180}
-        height={180}
+        width="100%"
+        height="100%"
+        layout="responsive"
+        objectFit="cover"
       />
       <p>
         Hello! I'm <strong>Umar Muqthar</strong>, an experienced <strong>IGCSE Computer Science teacher</strong> with over <strong>8 years</strong> of international teaching experience in the Maldives, Bahrain, and India.
