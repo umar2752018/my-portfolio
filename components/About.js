@@ -5,7 +5,7 @@ export default function About() {
     <section id="about">
       <h1>About Me</h1>
       <Image
-        src="/images/profile.jpg"
+        src="/images/profile.jpeg"
         alt="Umar Muqthar Profile"
         width="205"
         height="230"
